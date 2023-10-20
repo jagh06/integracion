@@ -85,7 +85,7 @@ export default function RegisterForm() {
             placeholder="Password"
           />
           <button className="bg-green-600 text-white font-bold cursor-pointer px-6 py-2" id="inputAdd">
-            Register
+            <span>Register</span>
           </button>
 
           {error && (
