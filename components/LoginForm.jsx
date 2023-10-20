@@ -5,6 +5,7 @@ import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
+
 export default function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -59,7 +60,7 @@ export default function LoginForm() {
           )}
 
           <Link className="text-sm mt-3 text-right" href={"/register"}>
-            Don't have an account? <span className="underline">Register</span>
+            Dont have an account? <span className="underline">Register</span>
           </Link>
         </form>
       </div>
