@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 
 
 export default function LoginForm() {
@@ -28,7 +28,9 @@ export default function LoginForm() {
         return;
       }
 
-      router.replace("dashboard");
+      //router.replace("dashboard");
+      router.push("/dashboard");
+      //redirect("/dashboard");
     } catch (error) {
       console.log(error);
     }
